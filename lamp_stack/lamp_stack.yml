@@ -1,0 +1,42 @@
+- name: Install Apache, PHP, and MySQL
+  hosts: test-servers
+  become: true
+  become_user: root
+  gather_facts: true
+
+  tasks:
+    - name: Install Apache2
+      package:
+        name: apache2
+        state: present
+
+    - name: Install Apache2 PHP5
+      package:
+        name: libapache2-mod-php
+        state: present
+
+    - name: Install PHP CLI
+      package:
+        name: php-cli
+        state: present
+
+    - name: Install PHP Mcrypt
+      package:
+        name: php-mcrypt
+        state: present
+
+    - name: Install PHP GD
+      package:
+        name: php-gd
+        state: present
+
+    - name: Install PHP MySQL
+      package:
+        name: php-mysql
+        state: present
+
+    - name: Install MySQL Server
+      package:
+        name: mysql-server
+        state: present
+
