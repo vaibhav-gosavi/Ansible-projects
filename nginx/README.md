@@ -95,3 +95,4 @@ Connect to the slave EC2 instance(s) and verify that Nginx is installed and runn
 By completing these steps, you will have successfully automated the installation and configuration of Nginx using Ansible. This project showcases your ability to use Ansible for infrastructure provisioning and configuration management, which can be a valuable skill for DevOps roles.
 
 Remember to adjust the playbook, inventory, and any additional configurations to suit your specific environment and requirements. You can also enhance the project by adding error handling, parameterization, or more advanced Nginx configurations based on your needs.
+
